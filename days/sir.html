@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <title>Form Document</title>
+</head>
+<body>
+    <form action="links.html" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <label for="mail">Email</label>
+        <input type="email" id="mail" name="email" placeholder="eg: gurminder@gmail.com">
+        <br><br>
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass">
+
+        <br><br>
+
+        <label for="">Age</label>
+        <input type="number" name="" id="" max="100" min="18" value="25" readonly>
+        <br><br>
+
+        <label for="">Gender</label>
+        <input type="radio" id="male" name="gender"> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender"> <label for="female">Female</label>
+        <br><br>
+        <input type="checkbox" name="" id="term">
+        <label for="term">Accept Terms and Conditions</label>
+        <br><br>
+
+        <label for="">State</label>
+        <select name="" id="">
+            <option value="" disabled selected>Select State</option>
+            <option value="">Punjab</option>
+            <option value="">HP</option>
+            <option value="">MP</option>
+            <option value="">UP</option>
+            <option value="">Tamilnadu</option>
+            <option value="">Haryana</option>
+            <option value="">Gujrat</option>
+        </select>
+        <br><br>
+
+        <label for="">Date</label>
+        <input type="date">
+        <br><br>
+        <label for="">Choose Image</label>
+        <input type="file" name="" id="">
+        <br><br>
+        <label for="list">Country Code</label>
+        <input list="codes" id="list" name="list">
+        <datalist id="codes">
+            <option value="+91">India</option>
+            <option value="+92">Pakistan</option>
+            <option value="Nepal">+96</option>
+            <option value="America">+144</option>
+            <option value="Canada"></option>
+            <option value="Russia"></option>
+            <option value="Singapore"></option>
+        </datalist>
+
+        <label for=""></label>
+        <button type="submit">Submit</button>
+
+        <input type="search" name="" id="">
+        <textarea name="" id="" rows="10" cols="30"></textarea>
+
+        <!-- <input type="button" value="Submit"> -->
+
+        <!-- fieldset and legend  -->
+    </form>
+    
+</body>
+</html>

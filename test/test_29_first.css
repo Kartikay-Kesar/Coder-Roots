@@ -1,0 +1,178 @@
+/* whole document margin and padding 0 */
+*
+{
+    margin: 0px;
+    padding:0px;
+}
+
+/* contain whole content */
+.container
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width:100vw;
+    background-color: orange;
+}
+
+/* heading "ONLINE EXAM SYSTEM" */
+.heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    border: 1px solid black;
+    font-size: 25px;
+    color: white;
+}
+
+/* navbar */
+.navbar
+{
+    display: flex;
+    align-items: center;
+    height:8%;
+    background-color: yellow;
+    border-bottom: 1px solid black;
+}
+
+/* navbar's content */
+.content
+{
+    display: flex;
+    list-style: none;
+}
+
+/* navbar's anchor tag */
+.navbar-links
+{
+    color: blue;
+}
+
+/* navbar's list , anchor tag lies inside this */
+.navbar-lists
+{
+    margin-left: 10px;
+}
+
+/* another div for "welcome to online exam system" itatic */
+.welcome
+{
+    display: flex;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-style: italic;
+    height: 6%;
+    
+}
+
+/* inside welcome div we use paragraph tag */
+.welcome p
+{
+    margin-left: 10px;
+}
+
+
+/* container second */
+.container-2
+{
+    display: flex;
+    border: 1px solid black;
+    height: 60%;
+}
+
+/* section-1 of conatiner-2 */
+.section-1
+{
+    width: 70%;
+    border-right: 1px solid black;
+    background-color: gray;
+}
+
+/* heading 1 tag inside section-1 */
+.section-1 h1
+{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* horizontal line */
+.section-1 hr
+{
+    margin: 15px;
+    border-top: 1px solid white;
+}
+
+/* section-1-content is another div inside section-1
+ which contain image and paragraph */
+
+ .section-1-content
+{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    color: white;
+    margin-left: 10px;
+}
+
+/* image in section one */
+.section-1 img
+{
+    /* display: inline-block; */
+    height: 140px;
+    width: 110px;
+    border: 5px solid black;
+    float: left;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+/* paragraph in section-1 */
+.section-1 p
+{
+    text-align: justify;
+    margin-right:15px;
+
+}
+
+/* section-2 another div inside container-2 */
+.section-2
+{
+    text-align: center;
+    background-color: skyblue;
+    width: 30%;
+
+}
+
+/* heading tag */
+.section-2 h2
+{
+    margin-top: 5px;
+}
+
+/* horizontal line */
+.section-2 hr
+{
+    margin: 15px;
+    border: 1px solid red;
+}
+
+/* image */
+.section-2 img
+{
+    margin-top: 15px;
+    height: 150px;
+    width:120px;
+}
+
+/* footer */
+.footer
+{
+    flex: 1;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}

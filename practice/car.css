@@ -1,0 +1,110 @@
+*
+{
+    margin-top:0px;
+    padding:0px;
+}
+
+.blue-car
+{
+    z-index: 1;
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    animation-name: accelerate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    /* animation: ; name  duration time-function delay iteration-count*/
+}
+
+@keyframes accelerate
+{
+    from{
+        margin-left:0px;
+    }
+    to
+    {
+        margin-left: calc(100vw - 250px);
+    }
+}
+
+.wheel-1
+{
+    z-index:2;
+    margin-top: 50px;
+    margin-left:26px;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    animation:rotation-wheel-1;
+    animation-duration: 10.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes rotation-wheel-1 {
+    
+    from
+    {
+        margin-left:26px;
+        transform: rotate(0deg);
+    }
+
+    to
+    {
+        margin-left: calc(100vw - (177px));
+        transform: rotate(1440deg);
+    }
+    
+}
+
+.wheel-2
+{
+    z-index:2;
+    margin-top: 50px;
+    margin-left:177px;
+    position: absolute;
+    height: 45px;
+    width: 45px;
+    animation:rotation-wheel-2;
+    animation-duration: 10.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes rotation-wheel-2 {
+    
+    from
+    {
+        margin-left:177px;
+        transform: rotate(0deg);
+    }
+    to 
+    {
+        margin-left: calc(100vw - 26px);
+        transform: rotate(1440deg);
+    }
+}
+
+.road
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+} 
+
+.line-divider
+{
+    width: 100vw;
+    border: 5px dotted black;
+}
+
+

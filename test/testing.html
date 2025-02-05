@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Beside & Below Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 50vw;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .image {
+            width: 120px;
+            height: 150px;
+            margin-right: 10px;
+        }
+
+        .text {
+            flex: 1;
+            min-width: calc(100% - 130px); /* Ensures first line wraps beside image */
+        }
+
+        .full-text {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="image" src="girl.jpg" alt="Girl">
+        <p class="text">
+            This part of the text will appear beside the image. It will wrap if it's too long.
+        </p>
+        <p class="full-text">
+            This part of the text will start **below** the image. It will take the full width of the container.
+        </p>
+    </div>
+
+</body>
+</html>

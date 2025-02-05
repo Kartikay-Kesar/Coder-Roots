@@ -1,0 +1,422 @@
+
+/* 
+    ||
+        universat selector
+    ||
+*/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 
+    ||
+        root selector (particularly html tag)
+    ||
+*/
+
+:root
+{
+     /* if we are writing margin:0px and 
+     padding 0px does not working in root*/
+    
+     --main-color:rgb(181,136,24); /*creating varibale in css keep in mind "--" is important in front of creating varibale*/
+}
+
+/* 
+    ||
+        navbar
+    ||
+*/
+
+
+.navbar
+{
+    display: flex;   
+    justify-content: space-between; /*seprating, logo at left side and menu at right side*/
+    align-items: center;
+    background-color: aliceblue;
+    width: 100%;
+    height: 60px;
+}
+
+/* 
+    ||
+        jewels of elegance text left side on navbar
+    ||
+*/
+
+.jewels-of-elegance
+{
+    margin-left: 20px;
+    color:  var(--main-color);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* 
+    ||
+        hover
+    ||
+*/
+
+.jewels-of-elegance:hover
+{
+    color: gray;
+}
+
+/* 
+    ||
+        navbar-list
+    ||
+*/
+
+.navbar-list
+{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* 
+    ||
+        navbar-links
+    ||
+*/
+
+.navbar-links
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* 
+    ||
+        navbar-links:hover
+    ||
+*/
+
+.navbar-links:hover
+{
+    color: var(--main-color);
+}
+
+/* 
+    ||
+        main-top
+    ||
+*/
+
+.main-top
+{
+    /* because we use position : absolute in button 
+    which is taking distance with respect to main-top so we use position relative of main-top*/
+    
+    position: relative; 
+    width: 100%;
+} 
+
+/* 
+    ||
+        girl-picture
+    ||
+*/
+
+.bg-girl
+{
+    display: block;
+    width: 100%;
+    height: auto; /* means grow on the base of its content */
+}
+
+/* 
+    ||
+        button-shop-now
+    ||
+*/
+
+.button-shop-now
+{
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    transform: translate(-50%, -50%); 
+    /* this is used to align button in center
+     (-ms-transform: translate(-50%, -50%);) -ms- is prefex for microsoft edge browser nowdays its less use */
+    
+    cursor: pointer; /*if we hover cursor change into hand shape which is pointer*/
+    border: none;
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    
+}
+
+/* 
+    ||
+        hover property
+    ||
+*/
+
+.button-shop-now:hover,.button-add-to-cart:hover
+{
+    border: 1px solid orange;
+    background: transparent;
+    color: orange;
+
+}
+
+/* 
+    ||
+        main-middle container
+    ||
+*/
+
+.main-middle
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 233, 233);
+}
+
+/* 
+    ||
+        heading and content
+    ||
+*/
+
+.main-middle-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* heading */
+.main-middle-content h1
+{
+    color: var(--main-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* paragraph */
+.main-middle-content p
+{
+    margin-bottom: 23px;
+}
+
+/* 
+    ||
+        list of necklace
+    ||
+*/
+
+.items
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* 
+    ||
+        necklace all content price heading image lie inside
+    ||
+*/
+
+.necklace
+{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+    margin: 0px 10px 50px 10px;
+}
+
+/* 
+    ||
+        necklace images
+    ||
+*/
+
+.necklace-image
+{
+    width: 50%;
+    height:auto;
+}
+
+/* inside necklace its heading on image */
+.necklace h3
+{
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+/* price of necklac (text) */
+.price-of-necklace
+{
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+/* inside necklace class its button bottom of image */
+.button-add-to-cart
+{
+    border: none;
+    background-color: orange;
+    color: white;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+}
+
+/* 
+    ||
+        image's background div
+    ||
+*/
+
+.template 
+{
+    width: 100%;
+    background-color: var(--main-color);
+
+}
+
+/* 
+    ||
+        image inside div
+    ||
+*/
+
+.below-image-template
+{
+    display: block;
+    width: 100%;    
+    background-color: var(--main-color);
+    opacity: calc(0.5);
+}
+
+/* 
+    ||
+        about us section
+    ||
+*/
+
+.about-us
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+/* 
+    ||
+        heading "About Us"
+    ||
+*/
+
+.about-us h2
+{
+    text-align: center;
+    color: var(--main-color);
+    margin-top: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    ||
+        lorem text and image 's div is para
+    ||
+*/
+
+.para
+{
+    display: flex;
+}
+
+/* 
+    ||
+        image side of lorem text inside para div
+    ||
+*/
+
+.about-us img
+{
+    display: block;
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 40%;
+    height: auto;
+}
+
+/* lorem text */
+
+.about-us p
+{
+    margin-top: 20px;
+    text-align: justify;
+    width: 55%;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+/* highlight into lightgray */
+mark
+{
+    background-color: lightgrey;
+}
+
+/* footer tag */
+.footer
+{
+    width: 100%;
+    height: auto;
+}
+
+
+.clients-opinion,.copyright
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+
+.clients-opinion
+{
+    height: 100px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.clients-opinion p
+{
+    font-style: italic;
+}
+
+.contact-us
+{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.copyright
+{
+    height: 40px;
+}
