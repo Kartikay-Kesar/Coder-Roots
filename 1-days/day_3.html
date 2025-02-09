@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form</title>
+  </head>
+
+  <body>
+    <style>
+      .td_in_middle
+      {
+        text-align: center;
+      }
+    </style>
+
+    <form action="">
+      <center>
+        <strong>
+          <caption>
+            APPLICATION FORM
+          </caption>
+        </strong>
+      </center>
+      <fieldset>
+        <legend>Personal Details</legend>
+
+        <table>
+          <!-- first row -->
+          <tr>
+            <!-- first cell -->
+
+            <td width="200">
+              <label for="full_name">Applicant's full name</label>
+            </td>
+
+            <!-- second cell -->
+
+            <!-- <td></td> -->
+
+            <td width = "600">
+              <select name="" id="" required>
+                <option value="default" disabled selected>--select--</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+              </select>
+              <input type="text" />
+            </td>
+
+            <!-- third cell -->
+
+            <td width="200">Care Of</td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <label for="parents">Parents</label>
+              <input type="radio" id="parents" name="care_of" required />
+
+              <label for="guardian">Guardian</label>
+              <input type="radio" id="guardian" name="care_of" required />
+            </td>
+          </tr>
+
+          <!-- second row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td width="200">
+              <label for="father_name">Father's Name</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td >
+              <select name="" id="" disabled>
+                <option value="mr" disabled selected>Mr.</option>
+              </select>
+
+              <input type="text" id="father_name" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="mother_name">Mother's Name</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <select name="" id="" disabled>
+                <option value="mrs" disabled selected>Mrs.</option>
+              </select>
+
+              <input type="text" id="mother_name" required />
+            </td>
+          </tr>
+
+          <!-- third row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="">Gender</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" required />
+
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" required />
+
+              <label for="others">Others</label>
+              <input type="radio" name="gender" id="others" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="dob">Date Of Birth</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <input type="date" id="dob" required />
+            </td>
+          </tr>
+
+          <!-- fourth row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="marital_status">Marital Status</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <select name="marital_status" id="" required>
+                <option value="select" selected disabled>--select--</option>
+                <option value="married">married</option>
+                <option value="unmarried">unmarried</option>
+              </select>
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="">Category</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <select name="Category" id="" required>
+                <option value="select" selected disabled>--select--</option>
+                <option value="general">Gen</option>
+                <option value="schedule_caste">Sc</option>
+                <option value="schedule_tribe">St</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- fifth row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="">Handicapped</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <label for="no_h">No</label>
+              <input type="radio" name="handicapped" id="no_h" required />
+
+              <label for="yes_h">Yes</label>
+              <input type="radio" name="handicapped" id="yes_h" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="">Ex-Serviceman</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <label for="no_s">No</label>
+              <input type="radio" name="ex_serviceman" id="no_s" required />
+
+              <label for="yes_s">Yes</label>
+              <input type="radio" name="ex_serviceman" id="yes_s" required />
+            </td>
+          </tr>
+
+          <!-- sixth row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="">EWS</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <label for="no_ews">No</label>
+              <input type="radio" name="ews" id="no_ews" required />
+
+              <label for="yes_ews">Yes</label>
+              <input type="radio" name="ews" id="yes_ews" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="">Religion</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <select name="" id="">
+                <option value="select" selected disabled>--select--</option>
+                <option value="hindu">Hindu</option>
+                <option value="sikh">Sikh</option>
+                <option value="muslim">Muslim</option>
+                <option value="christianity">Christianity</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- 2 fieldset -->
+
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <table>
+          <!-- first row -->
+          <tr>
+            <!-- first cell -->
+
+            <td width="200">
+              <label for="mobile_number">Mobile Number</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td width = "600">
+              <input
+                type="tel"
+                id="mobile_number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </td>
+
+            <!-- third cell -->
+
+            <td width = "200">
+              <label for="email">Email</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <input type="email" id="email" required />
+            </td>
+          </tr>
+
+          <!-- second row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="first_address">Address Line 1</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <input type="text" id="first_address" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="second_address">Address Line 2</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <input type="text" id="second_address" />
+            </td>
+          </tr>
+
+          <!-- third row -->
+
+          <tr>
+            <!-- first cell -->
+
+            <td>
+              <label for="city">City</label>
+            </td>
+
+            <!-- second cell -->
+
+            <td>
+              <input type="" name="" id="" required />
+            </td>
+
+            <!-- third cell -->
+
+            <td>
+              <label for="st">States</label>
+            </td>
+
+            <!-- fourth cell -->
+
+            <td>
+              <input list="states" id="st" placeholder="--select--" required />
+
+              <datalist id="states">
+                <option value="Punjab"></option>
+                <option value="Himachal Pardesh"></option>
+                <option value="Uttar Pradesh"></option>
+              </datalist>
+            </td>
+          </tr>
+
+          <!-- fourth row -->
+
+          <tr>
+            <td>
+              <label for="pin_code">Pin Code</label>
+            </td>
+
+            <td>
+              <input type="number" id="pin_code" min="1" required />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <!-- third fieldset -->
+
+      <fieldset>
+        <legend>Qualification Details</legend>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col" >Sr No.</th>
+              <th scope="col" width = "100">Qualification</th>
+              <th scope="col" width = "200">Board/University</th>
+              <th scope="col" width = "200">Passing Year</th>
+              <th scope="col" width = "200">Max Marks</th>
+              <th scope="col" width = "200">Marks Obtain</th>
+              <th scope="col" width = "200">Percentage</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+
+              <td class=td_in_middle>1</td>
+              <td class="td_in_middle">
+                <select name="" id="">
+                  <option value="select" selected disabled>--select--</option>
+                </select>
+              </td>
+              <td class=td_in_middle><input type="text" required /></td>
+              <td class=td_in_middle><input type="text" required /></td>
+              <td class=td_in_middle><input type="text" required /></td>
+              <td class=td_in_middle><input type="text" required /></td>
+              <td class=td_in_middle><input type="text" required /></td>
+            </tr>
+
+            <tr>
+              <td class="td_in_middle">2</td>
+              <td class="td_in_middle">
+                <select name="" id="">
+                  <option value="select" selected disabled>--select--</option>
+                </select>
+              </td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td class="td_in_middle">3</td>
+              <td class="td_in_middle">
+                <select name="" id="">
+                  <option value="select" selected disabled>--select--</option>
+                </select>
+              </td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+            </tr>
+
+            <tr>
+              <td class="td_in_middle">4</td>
+              <td class="td_in_middle">
+                <select name="" id="">
+                  <option value="select" selected disabled>--select--</option>
+                </select>
+              </td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+              <td class="td_in_middle"><input type="text" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <!-- fourth fieldset -->
+
+      <fieldset>
+        <legend>Language Knowledge</legend>
+
+        <table >
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th width="400">Reading</th>
+              <th width ="400">Writing</th>
+              <th width="400">Spoken</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td >Hindi</td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+            </tr>
+            <tr>
+              <td>Urdu</td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+              <td class="td_in_middle"><input type="checkbox" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+
+      <!-- fifth fieldset -->
+
+      <fieldset>
+        <legend>Identification Details</legend>
+
+        <table >
+          <tr>
+            <td >
+              <label for="addhar">Addhar Card Number</label>
+            </td>
+
+            <td><input type="text" id="addhar" required /></td>
+
+            <td>
+              <label for="pan_card">Pan Card Number</label>
+            </td>
+
+            <td><input type="text" id="pan_card" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="upload_photo">Upload Photo</label></td>
+            <td><input type="file" name="" id="upload_photo" required /></td>
+
+            <td><label for="upload_signature">Upload Signture </label></td>
+            <td>
+              <input type="file" name="" id="upload_signature" required />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <center>
+        <input type="submit" value="submit" />
+        <input type="submit" value="back" />
+      </center>
+    </form>
+  </body>
+</html>

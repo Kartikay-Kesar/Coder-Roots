@@ -1,0 +1,314 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root
+{
+    --cloud-color:lightgray;
+    --bg-cloud:white;
+}
+
+/* whole content lie inside this container */
+
+    .container
+    {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+     /*
+
+    ----------------------- SUN START -------------------------
+
+    */
+    
+    .sun
+    {
+        position: relative;
+        left:57vw;
+        top: 60vh;
+        opacity: 0;
+
+        height: 100px;
+        width: 100px;
+        transform: translate(-57%);
+        background-color: rgb(255, 182, 47);
+        border-radius: 50%;
+        animation: up-down 13s ease-in-out 1s infinite;
+
+    }
+
+
+    /* sun animation */
+
+    @keyframes up-down {
+
+        0%
+        {
+            background-color: red;
+            opacity: 0;
+            top: 60vh;
+        }
+
+        10% 
+        {
+            background-color: rgb(255, 182, 47);
+            opacity:1;
+        }
+        50% 
+        {
+            opacity: 1;
+            top: -20vh;
+        }
+
+        90%
+        {
+            opacity: 1;
+            background-color: rgb(255, 182, 47);
+        }
+
+        100%
+        {
+            background-color: red;
+            opacity: 0;
+            top:60vh;
+        }
+        
+    }
+
+
+
+
+    /*
+
+    ----------------------- SUN END -------------------------
+
+    */
+
+    /*
+
+    ----------------------- CLOUD START -------------------------
+
+    */
+
+    /* sky */
+
+    .sky
+    {
+        position: absolute;
+        top: 30%;
+        display: flex;
+        width: 100%;
+        height: auto;
+        align-self:flex-start;
+        background: transparent;
+    }
+
+    /* cloud container */
+
+    .cloud
+    {
+        position: absolute;
+        left: -20vw;
+        background-color: var(--bg-cloud);
+        background: transparent;
+
+       
+    }
+
+    .animate-cloud
+    {
+        animation: cloud-move 10s ease-in-out 0s infinite;
+    }
+
+    .animate-cloud-2
+    {
+        animation: cloud-move 15s ease-in-out 0s infinite;
+    }
+
+    .animate-cloud-3
+    {
+        animation: cloud-move 20s ease-in-out 0s infinite;
+    }
+
+    .animate-cloud-4
+    {
+        animation: cloud-move 12s ease-in-out 0s infinite;
+    }
+
+    /* cloud animation */
+
+    @keyframes cloud-move {
+
+        0%
+        {
+            left:-20vw;
+        }
+
+        50%
+        {
+            left: 120vw;
+        }
+
+        100%
+        {
+            left:-20vw;
+        }
+        
+    }
+
+
+    /* inside cloud container */
+
+    .cloud1
+    {
+        position: absolute;
+        bottom: 0%;
+        width: 30%;
+        height: 45%;
+        /* border: 1px solid black; */
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 90%;
+        background-color: var(--cloud-color);
+    }
+
+    /* inside cloud conatiner */
+
+    .cloud2
+    {
+        position: absolute;
+        top: 15%;
+        left: 10%;
+        width: 40%;
+        height: 60%;
+        /* border: 1px solid black; */
+        border-top-left-radius: 90%;
+        border-top-right-radius: 50%;
+        background-color: var(--cloud-color);
+    }
+
+    /* inside cloud conatiner */
+
+    .cloud3
+    {
+        position: absolute;
+        width: 40%;
+        height: 60%;
+        top: 15%;
+        left: 33.3%;
+        /* border: 1px solid black; */
+        border-top-right-radius: 90%;
+        background-color: var(--cloud-color);
+    }
+
+    /* inside cloud conatiner */
+
+    .cloud4
+    {
+        position:absolute;
+        width: 40%;
+        height: 60%;
+        top: 25%;
+        left: 50%;
+        /* border: 1px solid black; */
+        border-top-right-radius: 70%;
+        background-color: var(--cloud-color);
+    }
+
+    /* inside cloud conatiner */
+
+    .cloud5
+    {
+        position: absolute;
+        width:40%;
+        height:60%;
+        bottom: 0%;
+        right: 0%;
+        background-color: var(--cloud-color);
+        border-top-right-radius: 100%;
+        border-bottom-right-radius:100% ;
+    }
+
+    /* inside cloud conatiner */
+    /* bar to cover remaing space between clouds */
+
+    .bar
+    {
+        position: absolute;
+        height: 25%;
+        width: 33.3%;
+        background-color: white;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-60%);
+        background-color: var(--cloud-color);
+
+    }
+
+    
+
+/*
+
+----------------------- CLOUD END -------------------------
+
+ */
+
+
+ /*
+
+----------------------- MOUNTAIN START -------------------------
+
+ */
+
+    .mountain
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100vw;
+        height: 300px;
+        /* background-color: black; */
+    }
+
+    .mountain-color-and-dimensions
+    {
+        height: 0;
+        width: 0;
+        border-left: 300px solid transparent;
+        border-right: 300px solid transparent;
+        border-bottom:300px solid skyblue;
+    }
+
+    .mountain-1
+    {
+        position: absolute;
+        bottom: 0;
+        left: 10vw;
+    }
+
+    .mountain-2
+    {
+
+        position: absolute;
+        bottom: 0;
+        left: 30vw;
+
+        border-bottom:200px solid skyblue;
+    }
+
+    .mountain-3
+    {
+        position: absolute;
+        bottom: 0;
+        left: 45vw;
+    }
+
+ /*
+
+----------------------- MOUNTAIN END -------------------------
+
+ */
+
